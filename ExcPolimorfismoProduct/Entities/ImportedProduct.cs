@@ -20,7 +20,7 @@ namespace ExcPolimorfismoProduct.Entities
 
         public sealed override string PriceTag()
         {
-            return base.PriceTag() + "(Customs fee:  $ "+CustomsFee.ToString("F2",CultureInfo.InvariantCulture) ;
+            return base.PriceTag() + " (Customs fee: $ "+CustomsFee.ToString("F2",CultureInfo.InvariantCulture)+")" ;
         }
 
         public double TotalPrice()
