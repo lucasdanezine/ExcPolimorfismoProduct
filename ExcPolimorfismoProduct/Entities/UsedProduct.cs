@@ -19,7 +19,7 @@ namespace ExcPolimorfismoProduct.Entities
 
         public sealed override string PriceTag()
         {
-            return base.PriceTag() + "Manufacture date: "+ Manufacture;
+            return base.PriceTag() + "(Manufacture date: "+ Manufacture.ToShortDateString() + ")";
         }
     }
 }
